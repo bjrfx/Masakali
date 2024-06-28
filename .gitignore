@@ -131,3 +131,4 @@ dist
 
 # Ignore node_modules in the frontend subfolder
 frontend/node_modules/
+backend/node_modules/
