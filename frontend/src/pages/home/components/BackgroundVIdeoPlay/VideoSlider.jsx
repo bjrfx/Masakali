@@ -19,7 +19,7 @@ const VideoSlider = () => {
                             <div className="dit" >
                                 <div className="pulse">
                                     <Link>
-                                        <img src={logoclove} className="img22sty" style={{ filter: 'none', width: '20rem' }} alt="logo" />
+                                        <img src={logoclove} className="img22sty" style={{ filter: 'none', width: '20rem', opacity: '0.6' }} alt="logo" />
                                     </Link>
                                 </div>
                             </div>
