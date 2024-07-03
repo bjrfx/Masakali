@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -11,10 +12,89 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link href="assets/css/animate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Great%20Vibes' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pinyon%20Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin%20Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Philosopher' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" referrerpolicy="no-referrer" />
     <title>Masakali Indian Cuisine</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/93757f1483.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+  </script>
+  <script id="rendered-js">
+    (function ($) {// Begin jQuery
+        $(function () {// DOM ready
+            // If a link has a dropdown, add sub menu toggle.
+            $('nav ul li a:not(:only-child)').click(function (e) {
+                $(this).siblings('.nav-dropdown').toggle();
+                // Close one dropdown when selecting another
+                $('.nav-dropdown').not($(this).siblings()).hide();
+                e.stopPropagation();
+            });
+            // Clicking away from dropdown will remove the dropdown class
+            $('html').click(function () {
+                $('.nav-dropdown').hide();
+            });
+            // Toggle open and close nav styles on click
+            $('#nav-toggle').click(function () {
+                $('nav ul').slideToggle();
+            });
+            // Hamburger to X toggle
+            $('#nav-toggle').on('click', function () {
+                this.classList.toggle('active');
+            });
+        }); // end DOM ready
+    })(jQuery); // end jQuery
+    //# sourceURL=pen.js
+</script>
+  <script>
+    $(document).on("scroll", function () {
+        if
+            ($(document).scrollTop() > 86) {
+            $("#banner").addClass("shrink");
+        }
+        else {
+            $("#banner").removeClass("shrink");
+        }
+    });
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+    myModal.show()
+</script>
+<script>
+    if ($(document).scrollTop() > 100) {
+        $('#banner').addClass('shrink');
+    } else {
+        $('#banner').removeClass('shrink');
+    }
+
+    $(document).ready(function () {
+        // Event for pushed the video
+        $('#carouselExampleFade').carousel({
+            pause: true,
+            interval: false
+        });
+    });
+</script>
     <div id="root"></div>
   </body>
 </html>

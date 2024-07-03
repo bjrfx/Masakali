@@ -1,25 +1,21 @@
-import logo from './images/masakali/Logo/sizes/logo512.png';
-import './App.css';
+import { Route, Routes} from 'react-router-dom';
+import Home from './pages/home/Home';
+import AboutUs from './pages/about/AboutUs';
+import Menu from './pages/menu/Menu';
+import Contact from './pages/contact/Contact';
+import OrderOnline from './pages/order-online/OrderOnline';
 
-function App() {
+import './App.css';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://masakaliottawa.ca"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Masakali Indian Cuisine
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/order-online" element={<OrderOnline />} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App
