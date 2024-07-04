@@ -1,5 +1,5 @@
 import React from 'react'
-import logoclove from '../../../../assets/images/masakali.png';
+import masakali from '../../../../assets/images/masakali.png';
 import { Link } from 'react-router-dom';
 const ContainerMenu1 = () => {
     return (
@@ -12,7 +12,7 @@ const ContainerMenu1 = () => {
                             <Link className="navbar-brand" style={{ padding: '.5rem 1rem' }} to='/'>
                                 <span>
                                     <img
-                                        src={logoclove} style={{ width: '9rem' }} alt="Clove Logo">
+                                        src={masakali} style={{ width: '9rem' }} alt="Masakali Logo">
                                     </img>
                                         </span>
                             </Link>
