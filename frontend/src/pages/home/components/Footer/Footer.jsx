@@ -1,8 +1,9 @@
 import React from 'react'
-import footerBG from '../../../../assets/Newfooternoborder1.png'
+// import footerBG from '../../../../assets/Newfooternoborder1.png'
 import MasakaliLogo from '../../../../assets/images/masakali.png'
-import BG1 from '../../../../assets/Backgrounds/1.jpeg';
+// import BG1 from '../../../../assets/Backgrounds/1.jpeg';
 import BG1_30 from '../../../../assets/Backgrounds/1-30.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -52,25 +53,25 @@ const Footer = () => {
                             <ul style={{ listStyleType: 'none', marginLeft: '0px', marginTop: '85px' }} className="menusty">
                                 <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
                                     <i className="fa fa-angle-double-right" style={{ marginRight: '25px' }}></i>
-                                    <a href="index.html" style={{ color: 'black', cursor: 'pointer' }}>HOME</a>
+                                    <Link to='/' style={{ color: 'black', cursor: 'pointer' }}>HOME</Link>
                                 </li>
                                 <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
                                     <i className="fa fa-angle-double-right" style={{ marginRight: '25px' }}></i>
-                                    <a href="CocktailFables.html" style={{ color: 'black', cursor: 'pointer' }}>COCKTAIL FABLES</a>
+                                    <Link to='/about-us' style={{ color: 'black', cursor: 'pointer' }}>ABOUT US</Link>
                                 </li>
                                 <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
                                     <i className="fa fa-angle-double-right" style={{ marginRight: '25px' }}></i>
-                                    <a href="About.html" style={{ color: 'black', cursor: 'pointer' }}>ABOUT</a>
+                                    <Link to='/menu' style={{ color: 'black', cursor: 'pointer' }}>MENU</Link>
                                 </li>
                                 <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
                                     <i className="fa fa-angle-double-right" style={{ marginRight: '25px' }}></i>
-                                    <a href="Gift.html" style={{ color: 'black', cursor: 'pointer' }}>GIFT CARD</a>
+                                    <Link to='/contact' style={{ color: 'black', cursor: 'pointer' }}>CONTACT</Link>
                                 </li>
                                 <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
                                     <i className="fa fa-angle-double-right" style={{ marginRight: '25px' }}></i>
-                                    <a href="Menu.html" style={{ color: 'black', cursor: 'pointer' }}>MENU</a>
+                                    <Link to='/order-online' style={{ color: 'black', cursor: 'pointer' }}>ORDER ONLINE</Link>
                                 </li>
-                                <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
+                                {/* <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
                                     <i className="fa fa-angle-double-right" style={{ marginRight: '25px' }}></i>
                                     <a href="Book.html" style={{ color: 'black', cursor: 'pointer' }}>PRIVATE DINING</a>
                                 </li>
@@ -81,7 +82,7 @@ const Footer = () => {
                                 <li style={{ color: 'black', marginRight: '25px', marginTop: '25px', fontFamily: 'Philosopher' }}>
                                     <i className="fa fa-angle-double-right" style={{ marginRight: '25px' }}></i>
                                     <a href="Blogs/index.html" style={{ color: 'black', cursor: 'pointer' }}>BLOGS</a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                         {/* <div style={{ textAlign: "center", marginTop: "15px", color: "black" }} className="ft-social">

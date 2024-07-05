@@ -11,6 +11,11 @@ import video1 from '../../../../assets/Insta_images/9.gif'
 import video2 from '../../../../assets/Insta_images/10.gif'
 
 const SocialMediaPage = () => {
+    const borderStyle = {
+        borderStyle: 'solid',
+        borderRadius: '10px',
+        borderColor: 'white'
+    }
   return (
     <Fragment>
         <center>
@@ -19,26 +24,26 @@ const SocialMediaPage = () => {
             Our Social Media</h1><br /><br />
     </center>
     <div class="img-grid">
-        <a href="https://www.instagram.com/"> <img  src={video1}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img  src={video2}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image1}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image2}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image3}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image4}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image5}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image6}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image7}
-                alt="Masakali Indian Cuisine Instagram" /></a>
-        <a href="https://www.instagram.com/"> <img src={image8}
-                alt="Masakali Indian Cuisine Instagram" /></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img  src={video1}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img  src={video2}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image1}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image2}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image3}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image4}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image5}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image6}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle}/></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image7}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle} /></a>
+        <a href="https://www.instagram.com/masakaliottawa/"> <img src={image8}
+                alt="Masakali Indian Cuisine Instagram" style={borderStyle} /></a>
 
     </div>
     </Fragment>
