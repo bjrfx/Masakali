@@ -6,6 +6,7 @@ import ScrollSection from './components/GSAP/ScrollTrigger/ScrollSection'
 
 // import MenuCarousel from './components/MenuCarousel/MenuCarousel'
 import Footer from './components/Footer/Footer'
+import SocialMediaPage from './components/SocialMedia/SocialMediaPage'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <About />
       <ScrollSection />
       {/* <MenuCarousel /> */}
+      <SocialMediaPage />
       <Footer />
     </div>
   )
