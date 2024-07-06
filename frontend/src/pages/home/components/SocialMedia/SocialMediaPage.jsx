@@ -10,6 +10,7 @@ import image8 from '../../../../assets/Insta_images/8.jpg'
 import video1 from '../../../../assets/Insta_images/9.gif'
 import video2 from '../../../../assets/Insta_images/10.gif'
 import './SocialMediaPage.css'
+import zIndex from '@mui/material/styles/zIndex'
 
 const SocialMediaPage = () => {
     const [loaded, setLoaded] = useState(false);
@@ -17,7 +18,7 @@ const SocialMediaPage = () => {
     const borderStyle = {
         borderStyle: 'solid',
         borderRadius: '10px',
-        borderColor: 'white'
+        borderColor: 'white',
     }
     //fade in and out effect
     useEffect(() => {
