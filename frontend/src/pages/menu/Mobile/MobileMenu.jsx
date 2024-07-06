@@ -1,10 +1,20 @@
 import React from 'react'
-import image1 from '../../../assets/imagesnew/2.png';
-import image2 from '../../../assets/imagesnew/3.png';
-import image3 from '../../../assets/imagesnew/4.png';
-import image4 from '../../../assets/imagesnew/5.png';
-import { Link } from 'react-router-dom';
+// import image1 from '../../../assets/imagesnew/2.png';
+// import image2 from '../../../assets/imagesnew/3.png';
+// import image3 from '../../../assets/imagesnew/4.png';
+// import image4 from '../../../assets/imagesnew/5.png';
+import { Link, useNavigate } from 'react-router-dom';
 const MobileMenu = () => {
+    const navigate = useNavigate();
+    const handleClick = (to) => (e) => {
+        e.preventDefault();
+        navigate(to);
+        window.scrollTo(0, 0);
+    };
+    const image1 = 'https://masakaliottawa.ca/wp-content/uploads/2023/11/Chilli-Mushroom.jpg'
+    const image2 = 'https://masakaliottawa.ca/wp-content/uploads/2023/11/Okra-Masala.jpg'
+    const image3 = 'https://masakaliottawa.ca/wp-content/uploads/2020/08/Kadai-Chicken-curry.jpg'
+    const image4 = 'https://masakaliottawa.ca/wp-content/uploads/2023/12/Plain-Naan.jpg'
   return (
     <div className="container-fluid contsty">
 <div className="row">
@@ -35,7 +45,7 @@ const MobileMenu = () => {
         </div>
     </div>
     <div className="col-md-12" style={{marginTop: '19px'}}>
-        <center><Link to='/menu' className="btn btn-primary btn11"> View Menu</Link></center>
+        <center><Link to='/menu' onClick={handleClick('/menu')} className="btn btn-primary btn11"> View Menu</Link></center>
     </div>
 </div>
 </div>

@@ -11,6 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import CardMedia from '@mui/material/CardMedia';
+import { Divider } from '@mui/material';
 
 export default function AccordianMenu() {
     const cardOnHoverStyle = {
@@ -31,7 +32,8 @@ export default function AccordianMenu() {
     };
 
     return (
-        <div>
+        <div style={{padding: '5%'}}>
+            <Typography variant='h3' component='h1' style={{fontFamily: 'Philosopher', textAlign: 'center', marginBottom: '5%'}}>Menu</Typography>
             {menudata.map((category, categoryIndex) => (
                 <Accordion
                     key={categoryIndex}
@@ -49,7 +51,7 @@ export default function AccordianMenu() {
                         aria-controls={`panel${categoryIndex}-content`}
                         id={`panel${categoryIndex}-header`}
                     >
-                        <Typography>{category.name}</Typography>
+                        <Typography component='p' variant='h4' style={{fontFamily: 'Philosopher'}}>{category.name}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container spacing={2} sx={{ padding: '5%' }}>
@@ -68,11 +70,13 @@ export default function AccordianMenu() {
                                                     <Typography variant="h5" component="div">
                                                         {name}
                                                     </Typography>
-                                                    <Typography variant="h5" component="div" style={{ marginLeft: 'auto' }}>
+                                                    
+                                                    <Typography variant="h6" component="p" style={{ marginLeft: 'auto' }}>
                                                         ${price.toFixed(2)}
                                                     </Typography>
                                                 </div>
-                                                <Typography variant="body2" color="text.secondary">
+                                                <Divider />
+                                                <Typography variant="body2" color="text.secondary" sx={{marginTop: '3%'}}>
                                                     {description}
                                                 </Typography>
                                             </CardContent>

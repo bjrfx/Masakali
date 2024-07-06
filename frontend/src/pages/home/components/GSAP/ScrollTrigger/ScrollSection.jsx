@@ -8,9 +8,15 @@ import image4 from '../../../../../assets/carousel/new/ScrollImages-03.png'
 import image5 from '../../../../../assets/carousel/new/ScrollImages-04.png'
 import Button from '@mui/material/Button';
 import { Typography } from "@mui/material";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function ScrollSection() {
+    const navigate = useNavigate();
+    const handleClick = (to) => (e) => {
+        e.preventDefault();
+        navigate(to);
+        window.scrollTo(0, 0);
+    };
     const sectionRef = useRef(null);
     const triggerRef = useRef(null);
 
@@ -90,7 +96,7 @@ function ScrollSection() {
                                     color: 'white',
                                     fontFamily: 'Philosopher'
                                 }
-                            }}><Link to='/menu'>Open Menu</Link></Button>
+                            }}><Link to='/menu' onClick={handleClick('/menu')}>Open Menu</Link></Button>
                         </section>
                     </div>
                 </div>
